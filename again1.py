@@ -81,7 +81,7 @@ def bookings():
     all_bookings = Booking.query.all()   
     return render_template('bookings.html', bookings=all_bookings)
 
-if __name__ == '__main__':
-    with app.app_context():
-        db.create_all() #create database table before running the app
-    app.run(debug = True)
+#if __name__ == '__main__':
+#    with app.app_context():
+#        db.create_all() #create database table before running the app
+#    app.run(debug = True)
